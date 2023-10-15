@@ -2,8 +2,8 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Startpagina</title>
-    <link rel="stylesheet" href="startpagina.css">
+    <title>Overzichtspagina</title>
+    <link rel="stylesheet" href="overzichtspagina.css">
 </head>
 <body>
 <header>
@@ -18,23 +18,34 @@
         <a href="#"><img src="assets/icons/cart.png" alt="cart"/></a>
     </div>
 </header>
-<nav>
-    <a href="#">Startpagina</a>
-    <a href="overzichtspagina.html">Overzichtpagina</a>
-    <a href="detailpagina.html">Detailpagina</a>
-    <a href="loginpagina.html">Loginpagina</a>
-</nav>
 <main>
-    <div id="bredefoto">
-        <img src="assets/anfield.jpg" alt="anfield"/>
+    <div id="intro">
+        <h1>Webshop overzicht</h1>
+        <p>Op deze pagina kan je ons assortiment bekijken.</p>
     </div>
-    <div id="uitleg">
-        <img src="assets/logo.png" alt="logo"/>
-        <p>Wij verkopen klasieke voetbaltruitjes.</p>
-    </div>
-    <div id="uitgelicht">
-        <h1>Producten in de kijker</h1>
-        <div id="verzameling">
+    <div id="webshop">
+        <div id="filters">
+            <div id="kledingmaat">
+                <p>Kledingmaat</p>
+                <input type="checkbox" name=”Small” id=”Small” value=“Small”>
+                <label for=”Small”>Small</label>
+                <input type="checkbox" name=”Medium” id=”Medium” value=“Medium”>
+                <label for=”Medium”>Medium</label>
+                <input type="checkbox" name=”Large” id=”Large” value=“Large”>
+                <label for=”Large”>Large</label>
+            </div>
+            <div id="prijs">
+                <p>Kledingmaat</p>
+                <input type="checkbox" name=”€0-€10” id=”€0-€10” value=“€0-€10”>
+                <label for=”€0-€10”>€0-€10</label>
+                <input type="checkbox" name=”€10-€15” id=”€10-€15” value=“€10-€15”>
+                <label for=”€10-€15”>€10-€15</label>
+                <input type="checkbox" name=”€15-€20” id=”€15-€20” value=“€15-€20”>
+                <label for=”€15-€20”>€15-€20</label>
+            </div>
+        </div>
+
+        <div id="verzamelingproducten">
             <div class="product">
                 <img src="assets/liverpool.jpg" alt="Liverpool truitje"/>
                 <h2>Liverpool truitje</h2>
@@ -63,7 +74,6 @@
                 </div>
             </div>
         </div>
-        <button>Bekijk meer</button>
     </div>
 </main>
 <footer id="footer">
